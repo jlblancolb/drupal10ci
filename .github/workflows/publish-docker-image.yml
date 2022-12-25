@@ -15,6 +15,5 @@ jobs:
           image: drupal10ci
           tags: latest
           registry: ghcr.io
-          githubOrg: fourkitchens
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
