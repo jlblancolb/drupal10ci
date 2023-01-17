@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: drupal10ci/arm64v8
+          image: drupal10ci-arm64v8
           tags: arm64v8
           registry: ghcr.io
           username: ${{ github.actor }}
