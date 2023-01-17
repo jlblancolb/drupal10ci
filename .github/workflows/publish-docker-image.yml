@@ -2,7 +2,7 @@ name: Publish Docker image
 on:
   push:
     branches:
-      - main
+      - arm64v8
 
 jobs:
   publish-docker-image:
@@ -13,7 +13,7 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: drupal10ci
-          tags: latest
+          tags: arm64v8
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}

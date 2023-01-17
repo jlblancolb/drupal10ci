@@ -1,4 +1,4 @@
-FROM drupal:10.0.0-rc3-php8.2-fpm-buster
+FROM arm64v8/drupal
 
 RUN apt-get update && apt-get install -y \
   git \
