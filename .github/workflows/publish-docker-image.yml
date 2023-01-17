@@ -7,7 +7,7 @@ on:
 jobs:
   publish-docker-image:
     name: Publish Docker image
-    runs-on: ARM64
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       - uses: mr-smithers-excellent/docker-build-push@v5
