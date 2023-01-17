@@ -15,5 +15,5 @@ jobs:
           image: drupal10ci-arm64v8
           tags: arm64v8
           registry: ghcr.io
-          username: ${{ github.actor }}
+          username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
